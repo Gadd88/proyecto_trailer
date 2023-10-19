@@ -11,7 +11,7 @@ CREATE TABLE generos (
   nombre VARCHAR(50) NOT NULL UNIQUE
 );
 
-CREATE TABLE actricesyactores (
+CREATE TABLE actores (
   id INT AUTO_INCREMENT PRIMARY KEY,
   nombre VARCHAR(255) NOT NULL UNIQUE
 );
@@ -38,7 +38,7 @@ CREATE TABLE reparto_mid_catalogo (
   idCatalogo INT NOT NULL,
   idAct INT NOT NULL,
   FOREIGN KEY (idCatalogo) REFERENCES catalogo(id),
-  FOREIGN KEY (idAct) REFERENCES actricesyactores(id)
+  FOREIGN KEY (idAct) REFERENCES actores(id)
 );
 
 CREATE VIEW JSON_VIEW AS
@@ -57,7 +57,7 @@ SELECT
     c.temporadas,
     (
         SELECT GROUP_CONCAT(DISTINCT a.nombre SEPARATOR ', ')
-        FROM actricesyactores a
+        FROM actores a
         JOIN reparto_mid_catalogo rmc ON a.id = rmc.idAct
         WHERE rmc.idCatalogo = c.id
     ) AS reparto,

@@ -2,7 +2,7 @@
 
 ## Configuración
 
-Asegúrate de haber realizado la configuración inicial antes de utilizar la API. Esto incluye la instalación de las dependencias y la configuración de variables de entorno. Puedes encontrar un archivo `.env` que contiene las variables de entorno necesarias.
+Utiliza la estructura propuesta en el archivo `.env.dist` para generar un archivo `.env` con las variables de entorno correspondientes.
 
 # Instalación de dependencias
 
@@ -79,7 +79,7 @@ El endpoint /catalogo ofrece las siguientes funcionalidades:
 
 > Descripción: Devuelve el catálogo completo de contenidos. Los datos se obtienen de la vista JSON_VIEW en la base de datos.
 
-GET http://localhost:5000/catalogo/
+GET http://localhost:8080/catalogo/
 
 ### Obtener Catálogo por ID (GET /catalogo/:id)
 
@@ -87,7 +87,7 @@ GET http://localhost:5000/catalogo/
 
 > Descripción: Permite obtener un contenido específico del catálogo según su ID.
 
-> GET http://localhost:5000/catalogo/1
+> GET http://localhost:8080/catalogo/1
 
 ### Buscar Catálogo por Nombre (GET /catalogo/titulo key: titulo)
 
@@ -95,7 +95,7 @@ GET http://localhost:5000/catalogo/
 
 > Descripción: Permite buscar contenidos en el catálogo por su nombre. Los resultados se devuelven en un arreglo y se mapean para incluir la URL del póster.
 
-> ```shell GET http://localhost:5000/catalogo/nombre/Película```
+> ```shell GET http://localhost:8080/catalogo/nombre/Película```
 
 
 ### Buscar Catálogo por Género (GET /catalogo/genero key: genero)
@@ -104,7 +104,7 @@ GET http://localhost:5000/catalogo/
 
 > Descripción: Permite buscar contenidos en el catálogo por género. Los resultados se devuelven en un arreglo y se mapean para incluir la URL del póster.
 
-> ```shell GET http://localhost:5000/catalogo/genero/Acción```
+> ```shell GET http://localhost:8080/catalogo/genero/Acción```
 
 
 ## Endpoint `/categoria`
@@ -117,7 +117,7 @@ Este endpoint permite ver la información de las categorias registradas en la ap
 
 > Descripción: Este endpoint devuelve una lista de todas las categorias registradas en la aplicación.
 
-> shell GET http://localhost:5000/categorias/
+> shell GET http://localhost:8080/categorias/
 
 ## Endpoints API Catálogo
 

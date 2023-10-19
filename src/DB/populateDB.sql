@@ -38,7 +38,7 @@ INSERT INTO catalogo (id, poster, titulo, resumen, temporadas, idCategoria, trai
 (34, 'https://images.app.goo.gl/6J7sGskGdy8fDEK6A', 'El Primer hombre en la Luna', 'Cuenta la historia de la misión de la NASA que llevó al primer hombre a la luna, centrada en Neil Armstrong (interpretado por Ryan Gosling) y el periodo comprendido entre los años 1961 y 1969. Un relato en primera persona, basado en la novela de James R. Hansen, que explora el sacrificio y el precio que representó, tanto para Armstrong como para Estados Unidos, una de las misiones más peligrosas de la historia.', 'N/A', 2, null),
 (35, 'https://images.app.goo.gl/wwV5HpUnZU84hBFfA', 'Titanes del Pacífico - La Insurrección', 'Han pasado 10 años tras la primera invasión que sufrió la humanidad, pero la lucha aún no ha terminado. El planeta vuelve a ser asediado por los Kaiju, una raza de alienígenas colosales, que emergen desde un portal interdimensional con el objetivo de destruir a la raza humana. Ante esta nueva amenaza, los Jaegers, robots gigantes de guerra pilotados por dos personas para sobrellevar la inmensa carga neuronal que conlleva manipularlos, ya no están a la altura de lo que se les viene encima. Será entonces cuando los supervivientes de la primera invasión, además de nuevos personajes como el hijo de Pentecost, tendrán que idear la manera de sorprender al enorme enemigo, apostando por nuevas estrategias defensivas y de ataque. Con la Tierra en ruinas e intentando reconstruirse, esta nueva batalla puede ser decisiva para el futuro.', 'N/A', 2, null);
 INSERT INTO
-    actricesyactores (nombre)
+    actores (nombre)
 VALUES
     ('Claire Fox'),
     ('Olivia Colman'),

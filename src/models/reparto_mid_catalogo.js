@@ -6,7 +6,7 @@ const reparto_mid_catalogo = sequelize.define('reparto_mid_catalogo', {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
-            model: 'actricesyactores',
+            model: 'actores',
             key: 'id' 
         }
     },

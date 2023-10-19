@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../conection/connection');
 const Categoria = require('./categorias');
 const Genero = require('./generos');
-const Actor = require('./actricesyactores');
+const Actor = require('./actores');
 const generos_mid_catalogo = require('./generos_mid_catalogo');
 const reparto_mid_catalogo = require('./reparto_mid_catalogo');
 

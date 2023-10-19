@@ -4,7 +4,7 @@ const sequelize = require('../conection/connection');
 const Catalogo = require('../models/catalogo.js');
 const Categoria = require('../models/categorias.js');
 const Genero = require('../models/generos.js');
-const ActorActriz = require('../models/actricesyactores.js');
+const ActorActriz = require('../models/actores.js');
 const { Op, QueryTypes } = require('sequelize');
 
 
