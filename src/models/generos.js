@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../conection/connection');
+const sequelize = require('../connection/connection');
 const Generos = sequelize.define('Generos', {
   id: {
     type: DataTypes.INTEGER,

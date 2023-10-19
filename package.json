@@ -1,9 +1,10 @@
 {
-    "name": "clase_28",
+    "name": "proyecto_trailer",
     "version": "0.0.0",
     "description": "Curso de Programación BackEnd - UNTREF",
     "scripts": {
-        "start": "nodemon ./src/server.js",
+        "start": "node ./src/server.js",
+        "dev": "nodemon ./src/server.js",
         "stop": "killall -9 node",
         "eslint": "eslint ./src"
     },
@@ -12,7 +13,7 @@
         "url": ""
     },
     "keywords": [],
-    "author": "Ivan Luis Leiva",
+    "author": "Matias Saade",
     "license": "MIT",
     "dependencies": {
         "dotenv": "^16.3.1",
@@ -21,6 +22,7 @@
         "sequelize": "^6.32.1"
     },
     "devDependencies": {
-        "eslint": "^8.44.0"
+        "eslint": "^8.44.0",
+        "nodemon": "^3.0.1"
     }
 }

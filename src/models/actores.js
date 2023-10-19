@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../conection/connection');
+const sequelize = require('../connection/connection');
 const Actores = sequelize.define('actores', {
   id: {
     type: DataTypes.INTEGER,
@@ -13,7 +13,7 @@ const Actores = sequelize.define('actores', {
   }
 }, {
   timestamps: false,
-  tableName: 'actricesyactores'
+  tableName: 'actores'
 });
 
 module.exports = Actores;

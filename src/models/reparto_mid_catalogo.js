@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../conection/connection');
+const sequelize = require('../connection/connection');
 
 const reparto_mid_catalogo = sequelize.define('reparto_mid_catalogo', {
     idAct: {

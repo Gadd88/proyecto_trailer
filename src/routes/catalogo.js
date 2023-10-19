@@ -1,6 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const sequelize = require('../conection/connection');
+const sequelize = require('../connection/connection');
 const Catalogo = require('../models/catalogo.js');
 const Categoria = require('../models/categorias.js');
 const Genero = require('../models/generos.js');

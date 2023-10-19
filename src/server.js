@@ -4,7 +4,7 @@ require('dotenv').config({ path: path.join(__dirname, '..', '.env')});
 const dotenv = require('dotenv');
 dotenv.config();
 const express = require('express');
-const sequelize = require("./conection/connection");
+const sequelize = require("./connection/connection");
 const catalogo = require("./routes/catalogo");
 const categorias = require("./routes/categorias");
 

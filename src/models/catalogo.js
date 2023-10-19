@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../conection/connection');
+const sequelize = require('../connection/connection');
 const Categoria = require('./categorias');
 const Genero = require('./generos');
 const Actor = require('./actores');
